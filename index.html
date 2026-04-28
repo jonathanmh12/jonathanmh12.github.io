@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jonathan Hartfield – Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <header>
     <div class="container">
-      <h1>Jonathan Hartfield</h1>
-      <p class="tagline">Data Scientist &amp; Machine Learning Engineer</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#resume">Resume</a>
-        <a href="#projects">Projects</a>
-        <a href="https://github.com/jonathanmh12" target="_blank" rel="noopener">GitHub</a>
-      </nav>
+      <div class="header-content">
+        <img src="images/jon_suit.jpg" alt="Jonathan Hartfield" class="header-photo" width="160" height="160" />
+        <div>
+          <h1>Jonathan Hartfield</h1>
+          <p class="tagline">Data Scientist &amp; Machine Learning Engineer</p>
+          <nav>
+            <a href="#overview">Overview</a>
+            <a href="#resume">Resume</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="https://github.com/jonathanmh12" target="_blank" rel="noopener">GitHub</a>
+          </nav>
+        </div>
+      </div>
     </div>
   </header>
 
   <main class="container">
 
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
+    <!-- Overview Section -->
+    <section id="overview">
+      <h2>Overview</h2>
       <p>
-        Data Scientist with experience leading data quality initiatives and building
-        machine-learning pipelines at HealthTrust. I develop scalable Azure ML
-        models that improve item categorization accuracy and streamline validation
-        workflows, and I communicate findings clearly to drive stakeholder adoption.
+        I am a data scientist in the Nashville area, hoping to move to Huntsville, AL.
+        I build practical machine learning systems that improve data quality, speed up decisions,
+        and make analytics easier to trust across teams.
+      </p>
+      <p class="section-note">
+        Focused on Azure ML, NLP workflows, and production-ready Python pipelines.
       </p>
     </section>
 
@@ -63,21 +73,30 @@
             <span class="role">Data Scientist / Machine Learning Engineer, HCA HealthTrust (Nashville, TN)</span>
             <span class="period">Jul 2025 – Present</span>
           </div>
-          <p>Identify correlations in purchase datasets with DBT SQL, Azure ML, Dagster, and MLflow; build reusable Python Azure ML components; and adapt Hugging Face-based NLP/LLM approaches to improve item categorization and reduce categorization time.</p>
+          <p>Identified correlations across purchase datasets to predict labels and reduce analyst workload by 50%;
+            leveraged GPU acceleration, NLP, and Azure ML Studio to improve categorization efficiency per line by 5x;
+            implemented Git-based CI/CD workflows for model lifecycle management; and adapted Hugging Face-based LLM
+            techniques to improve unstructured text prediction performance by 5-10%.</p>
         </div>
         <div class="resume-entry">
           <div class="resume-entry-header">
             <span class="role">Data Quality Analyst II, HealthTrust (Nashville, TN)</span>
             <span class="period">May 2023 – Jul 2025</span>
           </div>
-          <p>Led data quality initiatives with Python monitoring scripts, deployed classification models to flag anomalies earlier, managed stakeholder concerns, and delivered dashboards/presentations that improved data reliability.</p>
+          <p>Owned end-to-end data quality initiatives and reporting, deployed Python-based machine learning models to
+            support classification and surface data quality concerns, managed ad hoc issues from internal and external
+            stakeholders, delivered regular presentations on quality performance, and maintained classification rules
+            for GL account and financial reporting workflows.</p>
         </div>
         <div class="resume-entry">
           <div class="resume-entry-header">
             <span class="role">Financial Representative, Northwestern Mutual (Nashville, TN)</span>
             <span class="period">Dec 2020 – Dec 2022</span>
           </div>
-          <p>Built and managed a client portfolio, handled end-to-end client acquisition workflows, and delivered tailored financial plans with projections and risk assessments.</p>
+          <p>Built a book of business with 50 clients and 500+ contacts, managed the full client acquisition lifecycle
+            from marketing through sales operations, analyzed client financial data in Excel and related tools, and
+            delivered personalized financial plans including net worth projections, retirement planning, and risk
+            assessments.</p>
         </div>
       </div>
 
@@ -88,7 +107,8 @@
             <span class="role">Business Analytics, Auburn University (Auburn, AL)</span>
             <span class="period">Dec 2020</span>
           </div>
-          <p>Coursework included corporate finance and capstone work. Received an academic scholarship and leadership recognition in Auburn University Marching Band.</p>
+          <p>Coursework included corporate finance and capstone work. Received an academic scholarship and leadership
+            recognition in Auburn University Marching Band.</p>
         </div>
       </div>
     </section>
@@ -105,6 +125,28 @@
       </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+
+      <div class="about-content">
+
+        <div class="about-text">
+          <p>
+            I am a Data Scientist with experience leading data quality initiatives and building
+            machine-learning pipelines at HealthTrust. I develop scalable Azure ML
+            models that improve item categorization accuracy and streamline validation
+            workflows. Outside of work, I enjoy spending time with my family, playing music,
+            learning about history, and exploring other technical topics like electronic hardware and home labbing.
+          </p>
+          <div class="about-family">
+            <img src="images/family.jpg" alt="Jonathan with his family" class="about-family-photo" />
+            <p class="about-caption">Outside of work, I'm a husband and a dad — the best two jobs I've got.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -118,4 +160,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
