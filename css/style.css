@@ -313,6 +313,42 @@ section p {
   color: var(--muted);
 }
 
+.space-embed {
+  margin-top: 1.75rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.space-embed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .5rem;
+  flex-wrap: wrap;
+}
+
+.space-embed-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.space-embed iframe {
+  width: 100%;
+  min-height: 680px;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 2px);
+  background: #fff;
+}
+
+@media (max-width: 640px) {
+  .space-embed iframe {
+    min-height: 560px;
+  }
+}
+
 /* ── Footer ───────────────────────────────────────────────── */
 footer {
   background: var(--card-bg);
