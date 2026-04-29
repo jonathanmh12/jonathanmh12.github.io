@@ -335,6 +335,43 @@ section p {
   margin-top: .5rem;
 }
 
+.tech-stack {
+  margin-top: 1.5rem;
+}
+
+.tech-stack-header {
+  margin-bottom: 1rem;
+}
+
+.tech-stack-header .section-note {
+  margin-bottom: 0;
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.tech-stack-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.tech-stack-card h4 {
+  margin: 0 0 .5rem;
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.tech-stack-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
 .space-embed {
   margin-top: 1.75rem;
   width: min(1200px, calc(100vw - 2rem));
