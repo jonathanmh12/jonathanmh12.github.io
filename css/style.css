@@ -315,6 +315,9 @@ section p {
 
 .space-embed {
   margin-top: 1.75rem;
+  width: min(1200px, calc(100vw - 2rem));
+  margin-left: 50%;
+  transform: translateX(-50%);
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -337,15 +340,25 @@ section p {
 
 .space-embed iframe {
   width: 100%;
-  min-height: 680px;
+  height: 78vh;
+  min-height: 820px;
+  max-height: 1200px;
   border: 1px solid var(--border);
   border-radius: calc(var(--radius) - 2px);
   background: #fff;
 }
 
 @media (max-width: 640px) {
+  .space-embed {
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
+
   .space-embed iframe {
-    min-height: 560px;
+    height: 74vh;
+    min-height: 700px;
+    max-height: none;
   }
 }
 
