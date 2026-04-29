@@ -123,29 +123,29 @@
 
       <div class="tech-stack" aria-labelledby="tech-stack-title">
         <div class="tech-stack-header">
-          <h3 id="tech-stack-title">Tech Stack for Model Training and Deployment</h3>
+          <h4 id="tech-stack-title">Tech Stack for Model Training and Deployment</h4>
           <p class="section-note">Core tools used to train, evaluate, and deploy the model behind the demo.</p>
         </div>
         <div class="tech-stack-grid">
           <article class="tech-stack-card">
-            <h4>Modeling</h4>
+            <h5>Modeling</h5>
             <p>Python, Hugging Face Transformers, and PyTorch for loading the base BERT model and fine-tuning it on
               domain-specific Greek text relationships.</p>
           </article>
           <article class="tech-stack-card">
-            <h4>Data Prep</h4>
+            <h5>Data Prep</h5>
             <p>DBT, Pandas, and custom preprocessing scripts for cleaning verses, structuring training pairs, and
               preparing inputs for tokenization and evaluation.</p>
           </article>
           <article class="tech-stack-card">
-            <h4>Experimentation</h4>
+            <h5>Experimentation</h5>
             <p>Notebook-driven iteration with MLFlow and metric review to compare runs, inspect errors, and refine the
               training data used for semantic similarity.
               Given more time, I would have preferred a dagster pipeline to set a more consistent workflow.
             </p>
           </article>
           <article class="tech-stack-card">
-            <h4>Deployment</h4>
+            <h5>Deployment</h5>
             <p>Hugging Face Spaces for serving the interactive interface so the fine-tuned model can be tested directly
               in the browser.</p>
           </article>
