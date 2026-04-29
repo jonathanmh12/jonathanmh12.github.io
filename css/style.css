@@ -306,18 +306,93 @@ section p {
   letter-spacing: .01em;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-  list-style: none;
+.resume-collapsible {
+  border: 1px solid rgba(140, 170, 210, .14);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, .01));
+  overflow: hidden;
 }
 
-.skills li {
+.resume-collapsible summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  padding: .75rem .95rem;
+  border-bottom: 1px solid transparent;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.resume-collapsible summary::-webkit-details-marker {
+  display: none;
+}
+
+.resume-collapsible summary::after {
+  content: "▾";
+  color: var(--accent-strong);
+  font-size: .95rem;
+  transform: rotate(-90deg);
+  transition: transform .2s ease;
+}
+
+.resume-collapsible[open] summary::after {
+  transform: rotate(0deg);
+}
+
+.resume-collapsible summary:hover {
   background: rgba(108, 182, 255, .08);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: .38rem .9rem;
+}
+
+.resume-collapsible[open] summary {
+  border-color: rgba(140, 170, 210, .14);
+}
+
+.resume-collapsible summary h3 {
+  margin: 0;
+}
+
+.resume-collapsible .skills-groups {
+  padding: .9rem .95rem .95rem;
+}
+
+.skills-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .9rem;
+}
+
+.skills-group {
+  background: linear-gradient(180deg, rgba(255, 255, 255, .03), transparent);
+  border: 1px solid rgba(140, 170, 210, .14);
+  border-radius: 16px;
+  padding: .85rem .95rem;
+}
+
+.skills-group h4 {
+  color: var(--accent-strong);
+  font-size: .95rem;
+  margin-bottom: .45rem;
+}
+
+.skills-group ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.skills-group li {
+  margin-bottom: .2rem;
+  font-size: .93rem;
+}
+
+.skills-group li:last-child {
+  margin-bottom: 0;
+}
+
+.skills-methods {
+  margin: .75rem .95rem .95rem;
+  color: var(--muted);
   font-size: .9rem;
 }
 
@@ -548,6 +623,11 @@ footer {
 @media (max-width: 760px) {
   section {
     padding: 1.35rem 1rem 1.5rem;
+  }
+
+  .skills-groups {
+    grid-template-columns: 1fr;
+    gap: .75rem;
   }
 
   .resume-entry {
