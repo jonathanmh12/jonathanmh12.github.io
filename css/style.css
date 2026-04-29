@@ -313,6 +313,28 @@ section p {
   color: var(--muted);
 }
 
+.demo-preface {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  background: linear-gradient(135deg, rgba(78, 161, 255, .16), rgba(78, 161, 255, .06));
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+.demo-preface h3 {
+  margin: 0 0 .5rem;
+  font-size: 1.05rem;
+}
+
+.demo-preface p {
+  margin: 0;
+}
+
+.demo-preface p + p {
+  margin-top: .5rem;
+}
+
 .space-embed {
   margin-top: 1.75rem;
   width: min(1200px, calc(100vw - 2rem));
