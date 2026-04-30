@@ -168,7 +168,11 @@ header nav a:hover {
 
 /* ── Sections ─────────────────────────────────────────────── */
 main {
-  padding: 3rem 0;
+  padding: 0 0 3rem;
+}
+
+#overview {
+  margin-top: 2rem;
 }
 
 section {
